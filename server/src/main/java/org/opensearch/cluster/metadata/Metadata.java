@@ -1329,6 +1329,7 @@ public class Metadata implements Iterable<IndexMetadata>, Diffable<Metadata>, To
         }
 
         public Builder templates(TemplatesMetadata templatesMetadata) {
+            this.templates.clear();
             this.templates.putAll(templatesMetadata.getTemplates());
             return this;
         }
