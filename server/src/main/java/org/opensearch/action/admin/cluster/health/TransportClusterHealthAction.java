@@ -493,7 +493,7 @@ public class TransportClusterHealthAction extends TransportClusterManagerNodeRea
         String[] concreteIndices;
         if (request.level().equals(ClusterHealthRequest.Level.AWARENESS_ATTRIBUTES)) {
             String awarenessAttribute = request.getAwarenessAttribute();
-            concreteIndices = clusterState.getMetadata().getConcreteAllIndices();
+            concreteIndices = clusterState.getMetadata().getConcreteAllIndices().toArray(String[]::new);
             return new ClusterHealthResponse(
                 clusterState.getClusterName().value(),
                 clusterState,

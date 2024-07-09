@@ -601,86 +601,44 @@ public class Metadata implements Iterable<IndexMetadata>, Diffable<Metadata>, To
     }
 
     /**
-     * Returns all the concrete indices in the format of array of strings.
+     * Returns all the concrete indices.
      */
-    public String[] getConcreteAllIndices() {
-        return allIndices.toArray(String[]::new);
-    }
-
-    /**
-     * Returns all the concrete indices in the format of set of strings.
-     */
-    public Set<String> getConcreteAllIndicesList() {
+    public Set<String> getConcreteAllIndices() {
         return allIndices;
     }
 
     /**
-     * Returns all the concrete indices that are not hidden in the format of array of strings.
+     * Returns all the concrete indices that are not hidden.
      */
-    public String[] getConcreteVisibleIndices() {
-        return visibleIndices.toArray(String[]::new);
-    }
-
-    /**
-     * Returns all the concrete indices that are not hidden in the format of list of strings.
-     */
-    public List<String> getConcreteVisibleIndicesList() {
+    public List<String> getConcreteVisibleIndices() {
         return visibleIndices;
     }
 
     /**
-     * Returns all of the concrete indices that are open in the format of array of strings.
+     * Returns all of the concrete indices that are open.
      */
-    public String[] getConcreteAllOpenIndices() {
-        return allOpenIndices.toArray(String[]::new);
-    }
-
-    /**
-     * Returns all of the concrete indices that are open in the format of list of strings.
-     */
-    public List<String> getConcreteAllOpenIndicesList() {
+    public List<String> getConcreteAllOpenIndices() {
         return allOpenIndices;
     }
 
     /**
-     * Returns all of the concrete indices that are open and not hidden in the format of array of strings.
+     * Returns all of the concrete indices that are open and not hidden.
      */
-    public String[] getConcreteVisibleOpenIndices() {
-        return visibleOpenIndices.toArray(String[]::new);
-    }
-
-    /**
-     * Returns all of the concrete indices that are open and not hidden in the format of list of strings.
-     */
-    public List<String> getConcreteVisibleOpenIndicesList() {
+    public List<String> getConcreteVisibleOpenIndices() {
         return visibleOpenIndices;
     }
 
     /**
-     * Returns all of the concrete indices that are closed in the format of array of strings.
+     * Returns all of the concrete indices that are closed.
      */
-    public String[] getConcreteAllClosedIndices() {
-        return allClosedIndices.toArray(String[]::new);
-    }
-
-    /**
-     * Returns all of the concrete indices that are closed in the format of list of strings.
-     */
-    public List<String> getConcreteAllClosedIndicesList() {
+    public List<String> getConcreteAllClosedIndices() {
         return allClosedIndices;
     }
 
     /**
-     * Returns all of the concrete indices that are closed and not hidden in the format of array of strings.
+     * Returns all of the concrete indices that are closed and not hidden.
      */
-    public String[] getConcreteVisibleClosedIndices() {
-        return visibleClosedIndices.toArray(String[]::new);
-    }
-
-    /**
-     * Returns all of the concrete indices that are closed and not hidden in the format of list of strings.
-     */
-    public List<String> getConcreteVisibleClosedIndicesList() {
+    public List<String> getConcreteVisibleClosedIndices() {
         return visibleClosedIndices;
     }
 
